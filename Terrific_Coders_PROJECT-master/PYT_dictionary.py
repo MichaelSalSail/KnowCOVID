@@ -84,7 +84,7 @@ def classify_article(test_runs_date, fileNames, list_of_url):
         for twenty in range(0,20):
             fname = os.getcwd()+"/Test-Runs-Articles/"+test_runs_date+"/"+fileNames[website_pref][twenty]
             if len(fname) < 1: fname = 'words.txt'
-            fh = open(fname)
+            fh = open(fname, encoding='utf-8')
 
             list = []
             biglist = []

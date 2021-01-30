@@ -55,7 +55,7 @@ if contents == '':
     # sys.exit()
     
 # Opening a text file
-file = open(file_name,"w")
+file = open(file_name, "w", encoding='utf-8')
 
 # Writing the ps to the text file
 file.write(contents)

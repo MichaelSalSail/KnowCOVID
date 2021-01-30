@@ -43,7 +43,7 @@ os.mkdir(path + today_date)
 
 # open Looking-for-good.txt and read the lines to list
 
-with open('Looking-for-good.txt') as f:
+with open('Looking-for-good.txt', encoding='utf-8') as f:
     url_list = f.readlines()
 url_list = [x.strip() for x in url_list] 
 
