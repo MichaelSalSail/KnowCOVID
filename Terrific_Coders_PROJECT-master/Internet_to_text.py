@@ -1,10 +1,11 @@
-from newsapi import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
+from creds import NEWS_API_KEY
 import string
 import sys
 from datetime import datetime
 from collections import *
 
-newsapi = NewsApiClient(api_key='8b03d85158db470394a960d1ded0046b')
+newsapi = NewsApiClient(api_key=NEWS_API_KEY)
 
 all_domains=['vox.com','bbc.com','www.sciencenews.org','buzzfeednews.com',
              'www.theguardian.com/us', 'nbcnews.com', 'apnews.com', 'npr.org']
