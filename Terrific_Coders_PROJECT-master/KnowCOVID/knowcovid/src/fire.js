@@ -1,8 +1,9 @@
 import firebase from 'firebase';
-import fire_user from fire_cred;
+
+const get_fire_cred=require('./fire_cred.js');
 
 var firebaseConfig = {
-    apiKey: fire_user,
+    apiKey: get_fire_cred.fire_user,
     authDomain: "login-9e602.firebaseapp.com",
     databaseURL: "https://login-9e602.firebaseio.com",
     projectId: "login-9e602",
